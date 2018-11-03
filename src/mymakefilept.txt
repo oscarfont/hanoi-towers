@@ -1,0 +1,25 @@
+﻿# Tercera pràctica de Fonaments de la Programacio - Tercer Trimestre.
+# Makefile de la pràctica 3.
+# Execució: make -f mymakefilept
+
+# 17-6-16, Óscar Font & Lucía Gasión
+
+cn3: Declaracions.o	Definicions.o	Main.o	gcc -o cn3 Declaracions.o Definicions.o Main.o 
+
+
+
+Declaracions.o: Declaracions.c	Declaracions.h
+	gcc -c Declaracions.c
+	
+
+Definicions.o: Definicions.c	Definicions.h 	Declaracions.h
+	gcc -c Definicions.c
+		
+
+
+Main.o: Main.c	Main.h	Declaracions.h
+	gcc -c Main.c
+
+clean: 
+rm *.o cn3
+
