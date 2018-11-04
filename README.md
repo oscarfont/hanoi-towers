@@ -1,7 +1,7 @@
 # Hanoi Towers
 
 Command line application developed with Lucía Gasión in our first year of Computer Science Degree at Universitat Pompeu Fabra.  
-Course name: Fonaments de la Programació.  
+Course name: Development basics.  
 Language: C.  
 IDE: NetBeans.  
 Objective:  Learn to divide the code in different files and learn to manage dynamic memory in C.  
